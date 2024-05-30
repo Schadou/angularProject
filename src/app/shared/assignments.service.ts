@@ -13,7 +13,7 @@ export class AssignmentsService {
 
   assignments:Assignment[] = [];
   //backendUrl = 'http://localhost:8010/api/assignments';
-  backendUrl = 'https://angularestatic2024back.onrender.com/api/assignments';
+  backendUrl = 'https://angularprojectback.onrender.com/api/assignments';
  
   /**
    *  Renvoie tous les assignments 
