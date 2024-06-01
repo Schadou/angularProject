@@ -22,6 +22,7 @@ import { Assignment } from './assignment.model';
 import { AssignmentDetailComponent } from './assignment-detail/assignment-detail.component';
 import { AddAssignmentComponent } from './add-assignment/add-assignment.component';
 import { AssignmentsService } from '../shared/assignments.service';
+import { CardFancyExample } from '../card/card.component';
 
 // Composant qui gère l'affichage d'une liste de devoirs (assignments)
 @Component({
@@ -30,7 +31,7 @@ import { AssignmentsService } from '../shared/assignments.service';
   imports: [CommonModule, RenduDirective, NonRenduDirective,
     MatListModule, MatButtonModule, RouterLink, MatInputModule,
     MatFormFieldModule, MatSliderModule, FormsModule, MatTableModule,
-    AssignmentDetailComponent, AddAssignmentComponent, MatPaginatorModule
+    AssignmentDetailComponent, AddAssignmentComponent, MatPaginatorModule,CardFancyExample
   ],
   templateUrl: './assignments.component.html',
   styleUrl: './assignments.component.css'

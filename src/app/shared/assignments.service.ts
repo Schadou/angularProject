@@ -95,6 +95,10 @@ export class AssignmentsService {
       newAssignment.nom = a.nom;
       newAssignment.dateDeRendu = new Date(a.dateDeRendu);
       newAssignment.rendu = a.rendu;
+      newAssignment.remarque = a.remarque;
+      newAssignment.note = a.note;
+      newAssignment.image = a.image;
+      newAssignment.auteur = a.auteur;
 
       this.addAssignment(newAssignment).subscribe(() => {
         console.log("Assignment ajouté : " + a.nom);
@@ -110,6 +114,10 @@ export class AssignmentsService {
       nouvelAssignment.nom = a.nom;
       nouvelAssignment.dateDeRendu = new Date(a.dateDeRendu);
       nouvelAssignment.rendu = a.rendu;
+      nouvelAssignment.note = a.note;
+      nouvelAssignment.remarque = a.remarque;
+      nouvelAssignment.auteur = a.auteur;
+      nouvelAssignment.image = a.image;
  
       appelsVersAddAssignment.push(this.addAssignment(nouvelAssignment))
     });
